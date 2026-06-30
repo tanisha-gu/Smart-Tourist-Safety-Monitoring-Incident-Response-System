@@ -4,7 +4,6 @@ class AIEngine:
     def detect_anomaly(last_seen_minutes, route_deviation_km):
 
         risk_score = 0
-
         if last_seen_minutes > 60:
             risk_score += 40
 
@@ -25,7 +24,7 @@ class AIEngine:
                 "status": "MEDIUM_RISK",
                 "message": "Suspicious movement detected"
             }
-
+# Here what we when in at last
         return {
             "status": "SAFE",
             "message": "No anomaly detected"
